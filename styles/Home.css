@@ -1,0 +1,164 @@
+.slide-1, .slide-2, .slide-3, .slide-4 {
+    display: block;
+    width: 80%;
+    height: calc(100vh - 90px);
+    margin: auto;
+}
+
+.slide-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-2 {
+    height: auto;
+}
+
+.slide-3 {
+    padding-top: 100px;
+}
+
+.slide-1-header-title {
+    font-size: 3em;
+    font-weight: 600;
+    padding-bottom: 40px;
+}
+
+.slide-1-header-text {
+    font-size: 1.35em;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.header-img {
+    width: 325px;
+    height: 325px;
+}
+
+.header-img > img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    border-style: dashed;
+}
+
+.header-2 {
+    color: crimson;
+    font-size: 2.5em;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tech-skills-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slide-4 {
+    padding: 0 80px;
+}
+
+.backend, .frontend {
+    font-size: 1.15em;
+}
+
+.backend > div > .title {
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+.backend > div > .level {
+    background: #8D6E63;
+}
+
+.frontend > div > .title {
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+.frontend > div > .level {
+    background: crimson;
+}
+
+.level {
+    max-width: 300px;
+    height: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: black;
+}
+
+.other {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 40px;
+}
+
+.skill {
+    cursor: pointer;
+    width: fit-content;
+    font-size: 30px;
+    text-align: center;
+    padding: 15px 40px;
+    margin: 25px auto;
+    background-color: white;
+    border: 2px solid crimson;
+}
+
+.skill:hover {
+    color: white;
+    background-color: crimson;
+    transition-duration: .2s;
+}
+
+@media only screen and (max-width: 1090px) {
+    .other {
+        padding: 0;
+    }
+
+    .slide-4 {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 1058px) {
+    .slide-1, .slide-2, .slide-3, .slide-4 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 873px) {
+   .other {
+    display: flex;
+    flex-direction: column;
+   }
+}
+
+@media only screen and (max-width: 683px) {
+    .tech-skills-box {
+        display: block;
+    }
+
+    .frontend {
+        display: block;
+        width: fit-content;
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .header-img {
+        display: none;
+    }   
+}
+
+@media only screen and (max-width: 470px) {
+    .skill {
+        font-size: 20px;
+    }
+}

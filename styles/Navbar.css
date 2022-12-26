@@ -1,0 +1,84 @@
+.navbar {
+    width: 80%;
+    height: 50px;
+    display: flex;
+    padding-top: 40px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-logo {
+    flex: 1;
+    color: crimson;
+    font-size: 2em;
+    font-weight: 700;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 0 0 10px crimson,
+                0 0 15px crimson,
+                0 0 25px crimson,
+                0 0 65px crimson,
+                0 0 85px crimson,
+                0 0 105px crimson;
+}
+
+.nav-link-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link {
+    font-size: 1.25em;
+    font-weight: 500;
+    padding: 0 25px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media only screen and (max-width: 1058px) {
+    .navbar {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 716px) {
+    .navbar {
+       padding-top: 40px;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 2.5em;
+    }
+
+    .show-nav-link-box, .nav-link-box {
+        position: fixed;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 90px);
+        text-align: center;
+        transition-duration: .3s;
+        background-color: crimson;
+    }
+
+    .nav-link-box {
+        position: fixed;
+        left: -100%;
+        display: block;
+    }
+    
+    .nav-link {
+        font-size: 1.25em;
+        font-weight: 500;
+        padding: 25px;
+        margin-top: 25px;
+    }
+
+    .nav-link > a {
+        color: white;
+    }
+}

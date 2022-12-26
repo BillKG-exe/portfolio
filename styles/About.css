@@ -1,0 +1,33 @@
+.about-header, .about-text {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.about-header {
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-size: 1.35em;
+}
+
+.about-text > p {
+    line-height: 1.7em;
+    margin: 25px 0;
+}
+
+@media only screen and (max-width: 401px) {
+    .about-header {
+        width: 100%;
+        font-size: 2em;
+    }
+    
+    .about-text {
+        font-size: 1.15em;
+        width: 100%;
+    }
+}
