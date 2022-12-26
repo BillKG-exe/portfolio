@@ -13,20 +13,21 @@ a {
   text-decoration: none;
 }
 
-.App {
+#__next {
   min-height: 100vh;
   padding: 60px;
   background: white;
 }
 
 @media only screen and (max-width: 716px) {
-  .App {
+  #__next {
     padding-top: 0;
   }
 }
 
 @media only screen and (max-width: 470px) {
-  .App {
+  #__next {
     padding: 0 25px;
   }
 }
+

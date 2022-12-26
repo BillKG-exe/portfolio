@@ -23,11 +23,11 @@
 @media only screen and (max-width: 401px) {
     .about-header {
         width: 100%;
-        font-size: 2em;
+        font-size: 1.85em;
     }
     
     .about-text {
-        font-size: 1.15em;
+        font-size: 16px;
         width: 100%;
     }
 }
